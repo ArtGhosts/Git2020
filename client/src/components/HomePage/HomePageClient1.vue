@@ -1,6 +1,7 @@
 <template>
 <div class="HomePageClient1">
-  公用组件1
+  子组件中(这是子组件)
+  <slot></slot>
 </div>
 </template>
 

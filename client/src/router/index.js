@@ -14,9 +14,8 @@ export default new Router({
   	},
     {path: '/HomePage',name: 'HomePage',component: () => import(/* webpackChunkName: "HelloWorld" */ '../components/HomePage'),
       children:[
-        {},
+        {path:'/HomePageClient1',name:"HomePageClient1",component:()=>import('../components/HomePage/HomePageClient1')},
       ],
-
     },
   ]
 })
