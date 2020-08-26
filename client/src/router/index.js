@@ -14,23 +14,18 @@ export default new Router({
   	},
     {path: '/HomePage',name: 'HomePage',component: () => import(/* webpackChunkName: "HelloWorld" */ '../components/HomePage.vue'),
       children:[
-        {path: "/HomePageHome",name: 'HomePageHome',component:()=>()=>import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageHome')},
-        {path: '/HomePageClient1',name: 'HomePageClient1',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageClient2')},
-		    {path: '/HomePageClient2',name: 'HomePageClient2',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageClient2')},
-		{path: '/HomePageMine',name: 'HomePageMine',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageMine')},
-		{path: '/HomePageShopping',name: 'HomePageShopping',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageShopping')},
-		{path: '/HomePageSmart',name: 'HomePageSmart',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageSmart')},
+		{path: '/HomePageClient1',name: 'HomePageClient1',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageClient2')},
+		{path: '/HomePageClient2',name: 'HomePageClient2',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageClient2')},
+		{path: '/HomePageHome',name: 'HomePageHome',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageHome'),
+    		meta:{tree: 1, }},
+		{path: '/HomePageMine',name: 'HomePageMine',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageMine'),
+    		meta:{tree: 4,}},
+		{path: '/HomePageShopping',name: 'HomePageShopping',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageShopping'),
+    		meta:{tree: 3,}},
+		{path: '/HomePageSmart',name: 'HomePageSmart',component: () => import(/* webpackChunkName: "client1" */ '../components/HomePage/HomePageSmart'),
+    		meta:{tree: 2,}},
       ],
 
     },
   ]
 })
-// router.beforeEach((to,from,next) =>{
-//   //window.document.title = to.meta.title;
-//   window.document.title = to.name;
-//   next();
-// })
-// router.afterEach((to,from,next) =>{
-//   window.scrollTo(0,0);
-// })
-// export default router;

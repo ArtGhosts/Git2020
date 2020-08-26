@@ -1,8 +1,6 @@
 <template>
   <div class="HomePageHome">
-    <h1>home页面</h1>
-
-  <!--  <div class="statement">
+   <div class="statement">
       <div class="fl">
         <p class="dib vm mt30 cl_fff f72">18</p>
         <span class="dib vm f28 cl_fff">°c</span>
@@ -21,7 +19,6 @@
       <a href="#" class="">主卧</a>
       <img src="../../assets/img/index/index_right.png" alt="" style="" class="index_icon_img">
       <img src="../../assets/img/index/index_right.png" alt="" style="" class="index_icon_img">
-
       <div class="van-tabs__line" style=""></div>
     </div>
     <div id="tabs-container" class="swiper-container swiper-container-horizontal">
@@ -44,7 +41,7 @@
         </div>
         <div class="swiper-slide swiper-slide-active notAdded">
           <img src="../../assets/img/OtherSettings/index4.png" style="width: 100%">
-          <p class="f28 cl_676a7d center">～还没有添加设备哦～</p>
+          <p class="f28 cl_676a7d center mt20">～还没有添加设备哦～</p>
           <a href="add/addEquipments.html">立即添加</a>
         </div>
         <div class="swiper-slide">
@@ -53,119 +50,119 @@
       </div>
 
     </div>
- -->  </div>
+  </div>
 
 </template>
 <script>
-  // import  Swiper from "swiper"
-  // import  'swiper/swiper-bundle.min.css'
-  // import  $ from "jquery"
+  import  Swiper from "swiper"
+  import  'swiper/swiper-bundle.min.css'
+  import  $ from "jquery"
   export default {
     name: "HomePageHome",
     data() {
-      // return {
-      //   distribute: ["我的设备", "客厅", "主卧", "侧卧", "厨房"],
-      //   active: '',
-      //   Tabbar: 0,
-      //   // 滑块按钮
-      //   checked: true,
-      //   icon: {
-      //     active: '../../assets/img/index/tabbar1_f90.png',
-      //     inactive: '../../assets/img/index/tabbar1.png'
-      //   },
-      //   icon1: {
-      //     active: '../../assets/img/index/tabbar2_f90.png',
-      //     inactive: '../../assets/img/index/tabbar2.png'
-      //   },
-      //   icon2: {
-      //     active: '../../assets/img/index/tabbar3_f90.png',
-      //     inactive: '../../assets/img/index/tabbar3.png'
-      //   },
-      //   icon3: {
-      //     active: '../../assets/img/index/tabbar4_f90.png',
-      //     inactive: '../../assets/img/index/tabbar4.png'
-      //   },
-      //   houseHome: [
-      //     {
-      //     trueImgs:require('../../assets/img/index/ic1_f90.png'),
-      //     falseImgs:require("../../assets/img/index/ic1.png"),
-      //     littleImg: require("../../assets/img/index/ic1_little.png"),
-      //     name: "智能空调",
-      //     temperature: "24.5",
-      //     boxtrue: false,
-      //     href:"conditioner/conditioner.html",
-      //   },
-      //     {
-      //       trueImgs: require('../../assets/img/index/ic2_f90.png'),
-      //       falseImgs: require("../../assets/img/index/ic2.png") ,
-      //       littleImg:  require("../../assets/img/index/ic2_little.png"),
-      //       name: "智能空净",
-      //       temperature: "PM2.5:57",
-      //       boxtrue: true,
-      //       href:"airCleaner/index.html",
-      //     },
-      //     {
-      //       trueImgs:require('../../assets/img/index/ic3_f90.png'),
-      //       falseImgs:require("../../assets/img/index/ic3.png") ,
-      //       littleImg:require("../../assets/img/socket/outlet1_999.png"),
-      //       name: "智能按摩椅",
-      //       temperature: "自动",
-      //       boxtrue: false,
-      //       href:"anmoyi/index.html",
-      //     },
-      //     {
-      //       trueImgs: require('../../assets/img/index/ic4_f90.png'),
-      //       falseImgs:  require("../../assets/img/index/ic4.png"),
-      //       littleImg:  require("../../assets/img/index/ic2_little.png"),
-      //       name: "智能新风",
-      //       temperature: "PM2.5:57",
-      //       boxtrue: true,
-      //       href:"xinfeng/index.html",
-      //     },
-      //     {
-      //       trueImgs: require('../../assets/img/index/ic5_f90.png'),
-      //       falseImgs:  require("../../assets/img/index/ic5.png"),
-      //       littleImg:  require("../../assets/img/index/ic5_little.png"),
-      //       name: "智能电灯",
-      //       temperature: "50%",
-      //       boxtrue: false,
-      //       href:"light/colorLight.html",
-      //     },
-      //     {
-      //       trueImgs: require('../../assets/img/index/ic5_f90.png'),
-      //       falseImgs:  require("../../assets/img/index/ic5.png"),
-      //       littleImg:require("../../assets/img/socket/outlet1_999.png"),
-      //       name: "智能插座",
-      //       temperature: "自动",
-      //       boxtrue: false,
-      //       href:"socket/socket.html",
-      //     },
+      return {
+        distribute: ["我的设备", "客厅", "主卧", "侧卧", "厨房"],
+        active: '',
+        Tabbar: 0,
+        // 滑块按钮
+        checked: true,
+        icon: {
+          active: '../../assets/img/index/tabbar1_f90.png',
+          inactive: '../../assets/img/index/tabbar1.png'
+        },
+        icon1: {
+          active: '../../assets/img/index/tabbar2_f90.png',
+          inactive: '../../assets/img/index/tabbar2.png'
+        },
+        icon2: {
+          active: '../../assets/img/index/tabbar3_f90.png',
+          inactive: '../../assets/img/index/tabbar3.png'
+        },
+        icon3: {
+          active: '../../assets/img/index/tabbar4_f90.png',
+          inactive: '../../assets/img/index/tabbar4.png'
+        },
+        houseHome: [
+          {
+          trueImgs:require('../../assets/img/index/ic1_f90.png'),
+          falseImgs:require("../../assets/img/index/ic1.png"),
+          littleImg: require("../../assets/img/index/ic1_little.png"),
+          name: "智能空调",
+          temperature: "24.5",
+          boxtrue: false,
+          href:"conditioner/conditioner.html",
+        },
+          {
+            trueImgs: require('../../assets/img/index/ic2_f90.png'),
+            falseImgs: require("../../assets/img/index/ic2.png") ,
+            littleImg:  require("../../assets/img/index/ic2_little.png"),
+            name: "智能空净",
+            temperature: "PM2.5:57",
+            boxtrue: true,
+            href:"airCleaner/index.html",
+          },
+          {
+            trueImgs:require('../../assets/img/index/ic3_f90.png'),
+            falseImgs:require("../../assets/img/index/ic3.png") ,
+            littleImg:require("../../assets/img/socket/outlet1_999.png"),
+            name: "智能按摩椅",
+            temperature: "自动",
+            boxtrue: false,
+            href:"anmoyi/index.html",
+          },
+          {
+            trueImgs: require('../../assets/img/index/ic4_f90.png'),
+            falseImgs:  require("../../assets/img/index/ic4.png"),
+            littleImg:  require("../../assets/img/index/ic2_little.png"),
+            name: "智能新风",
+            temperature: "PM2.5:57",
+            boxtrue: true,
+            href:"xinfeng/index.html",
+          },
+          {
+            trueImgs: require('../../assets/img/index/ic5_f90.png'),
+            falseImgs:  require("../../assets/img/index/ic5.png"),
+            littleImg:  require("../../assets/img/index/ic5_little.png"),
+            name: "智能电灯",
+            temperature: "50%",
+            boxtrue: false,
+            href:"light/colorLight.html",
+          },
+          {
+            trueImgs: require('../../assets/img/index/ic5_f90.png'),
+            falseImgs:  require("../../assets/img/index/ic5.png"),
+            littleImg:require("../../assets/img/socket/outlet1_999.png"),
+            name: "智能插座",
+            temperature: "自动",
+            boxtrue: false,
+            href:"socket/socket.html",
+          },
 
-      //   ]
-      // };
+        ]
+      };
     },
-    //对dom节点的操作
-    // mounted() {
-    //   var tabsSwiper = new Swiper('#tabs-container', {
-    //     speed: 500,
-    //     scrollbar: {
-    //       el: '.swiper-scrollbar',
-    //       dragSize: 30,
-    //     },
-    //     on: {
-    //       slideChangeTransitionStart: function() {
-    //         let objs = 0.95 + this.activeIndex * 1.2;
-    //         console.log(objs,$(".van-tabs__line"));
-    //         $(".van-tabs__line").css({
-    //           "transform": "translateX(" + objs + "rem) translateX(-50%)"
-    //         });
-    //         console.log($(".van-tabs__line").css("transform"));
-    //         $(".tabs .active").removeClass('active');
-    //         $(".tabs a").eq(this.activeIndex).addClass('active');
-    //       }
-    //     }
-    //   })
-    // },
+    // 对dom节点的操作
+    mounted() {
+      var tabsSwiper = new Swiper('#tabs-container', {
+        speed: 500,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          dragSize: 30,
+        },
+        on: {
+          slideChangeTransitionStart: function() {
+            let objs = 0.95 + this.activeIndex * 1.2;
+            console.log(objs,$(".van-tabs__line"));
+            $(".van-tabs__line").css({
+              "transform": "translateX(" + objs + "rem) translateX(-50%)"
+            });
+            console.log($(".van-tabs__line").css("transform"));
+            $(".tabs .active").removeClass('active');
+            $(".tabs a").eq(this.activeIndex).addClass('active');
+          }
+        }
+      })
+    },
     methods: {
     },
     created() {}
@@ -178,6 +175,15 @@
   body,html{
     background: #01071d !important;
   }
+  
+  .statement {
+      height: 1.82rem;
+      /* background: url(../../img/index/index2.png) no-repeat;	 */
+	  background: url(../../assets/img/index/index2.png) no-repeat;
+      background-size: cover;
+      padding: 0 0.35rem;
+  }
+  
   .boxHome{background: #01071d}
   .HomePageHome .notAdded a{
     display: block;
@@ -251,7 +257,7 @@
     transform: translate3d(0px, 0px, 0px);
   }
   .HomePageHome .classify {
-    overflow: auto;
+    /* overflow: auto; */
     height: 8.43rem;
     margin-top: 0.2rem;
     padding: 0 0.35rem;
