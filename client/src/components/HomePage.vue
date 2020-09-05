@@ -12,10 +12,9 @@
 	import Vue from "vue"
 	import HomePageClient1 from "./HomePage/HomePageClient1";
 	import HomePageClient2 from "./HomePage/HomePageClient2";
-  export default {
+	export default {
 		name: "HomePage",
 		components: {HomePageClient2, HomePageClient1},
-
 		data() {
 			return {
 				newData:"ads1",
@@ -23,9 +22,8 @@
 		},
 		methods: {
 			change(data) {
-			            this.newData = data;
-			        }
-
+			    this.newData = data;
+			}
 		},
 		created() {
 
