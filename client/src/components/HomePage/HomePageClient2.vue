@@ -55,22 +55,6 @@
 </script>
 
 <style>
-	.HomePageClient2 {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		/* background: red; */
-		z-index: 100;
-	}
-
-	.HomePageClient2 ul li {
-		width: 25%;
-		height: 1rem;
-		/* line-height: 1rem; */
-		text-align: center;
-		/* color: red; */
-		float: left;
-		font-width: bold;
-		padding-top: 0.15rem;
-	}
+	.HomePageClient2 {position: fixed;bottom: 0;width: 100%;z-index: 100;}
+	.HomePageClient2 ul li {width: 25%;height: 1rem;text-align: center;float: left;font-width: bold;padding-top: 0.15rem;}
 </style>

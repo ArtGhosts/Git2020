@@ -3,7 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Vtip from 'vtip'
+import 'vtip/lib/index.min.css'
+// 注册指令使用
+Vue.use(Vtip.directive)
+// 工具函数调用
+Vue.prototype.$tip = Vtip.tip
 Vue.config.productionTip = false
 import Vant from 'vant';
 import 'vant/lib/index.css';
